@@ -1,0 +1,80 @@
+[
+    {
+        "title" : "Chmapagne Coast",
+        "artists" : ["Blood Orange"],
+        "genres" : ["Alternative", "R&B"],
+        "year" : 2011
+    },
+    {
+        "title" : "Bodys",
+        "artists" : ["Car Seat Headrest"],
+        "genres" : ["Alternative", "Indie Rock"],
+        "year" : 2011
+    },
+    {
+        "title" : "Kokomo, IN",
+        "artists" : ["Japanese Breakfast"],
+        "genres" : ["Indie Pop"],
+        "year" : 2021
+    },
+    {
+        "title" : "Slay3r",
+        "artists" : ["Playboi Carti"],
+        "genres" : ["Hip-hop", "Rap"],
+        "year" : 2020
+    },
+    {
+        "title" : "40 Days",
+        "artists" : ["Slowdive"],
+        "genres" : ["Alternative", "Indie"],
+        "year" : 1993
+    },
+    {
+        "title" : "Normal Girl",
+        "artists" : ["SZA"],
+        "genres" : ["R&B", "Soul"],
+        "year" : 2017
+    },
+    {
+        "title" : "Lift",
+        "artists" : ["Radiohead"],
+        "genres" : ["Alternative Rock", "Britpop"],
+        "year" : 2017
+    },
+    {
+        "title" : "Halah",
+        "artists" : ["Mazzy Star"],
+        "genres" : ["Folk Rock", "Dream Pop"],
+        "year" : 1995
+    },
+    {
+        "title" : "Unlock It (Lock It)",
+        "artists" : ["Charli XCX", "Kim Petras"],
+        "genres" : ["Electropop", "Bubblegum Synth"],
+        "year" : 2020
+    },
+    {
+        "title" : "Schizophrenia",
+        "artists" : ["Sonic Youth"],
+        "genres" : ["Noise Rock"],
+        "year" : 1993
+    },
+    {
+        "title" : "I Want You To Love Me",
+        "artists" : ["Fiona Apple"],
+        "genres" : ["Baroque Pop"],
+        "year" : 2020
+    },
+    {
+        "title" : "Cico Buff",
+        "artists" : ["Cocteau Twins"],
+        "genres" : ["Shoegaze", "Ethereal Wave"],
+        "year" : 1988
+    },
+    {
+        "title" : "Be Quiet and Drive (Far Away)",
+        "artists" : ["Deftones"],
+        "genres" : ["Alternative Metal", "Post-Punk"],
+        "year" : 1997
+    }
+]
