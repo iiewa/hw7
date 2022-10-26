@@ -20,61 +20,61 @@
     {
         "title" : "Slay3r",
         "artists" : ["Playboi Carti"],
-        "genres" : ["Hip-hop", "Rap"],
+        "genres" : ["Hip-hop"],
         "year" : 2020
     },
     {
         "title" : "40 Days",
         "artists" : ["Slowdive"],
-        "genres" : ["Alternative", "Indie"],
+        "genres" : ["Alternative", "Indie Rock"],
         "year" : 1993
     },
     {
         "title" : "Normal Girl",
         "artists" : ["SZA"],
-        "genres" : ["R&B", "Soul"],
+        "genres" : ["R&B"],
         "year" : 2017
     },
     {
         "title" : "Lift",
         "artists" : ["Radiohead"],
-        "genres" : ["Alternative Rock", "Britpop"],
+        "genres" : ["Alternative", "Britpop"],
         "year" : 2017
     },
     {
         "title" : "Halah",
         "artists" : ["Mazzy Star"],
-        "genres" : ["Folk Rock", "Dream Pop"],
+        "genres" : ["Folk Rock"],
         "year" : 1995
     },
     {
         "title" : "Unlock It (Lock It)",
         "artists" : ["Charli XCX", "Kim Petras"],
-        "genres" : ["Electropop", "Bubblegum Synth"],
+        "genres" : ["Pop", "Synth"],
         "year" : 2020
     },
     {
         "title" : "Schizophrenia",
         "artists" : ["Sonic Youth"],
-        "genres" : ["Noise Rock"],
+        "genres" : ["Indie Rock"],
         "year" : 1993
     },
     {
         "title" : "I Want You To Love Me",
         "artists" : ["Fiona Apple"],
-        "genres" : ["Baroque Pop"],
+        "genres" : ["Pop"],
         "year" : 2020
     },
     {
         "title" : "Cico Buff",
         "artists" : ["Cocteau Twins"],
-        "genres" : ["Shoegaze", "Ethereal Wave"],
+        "genres" : ["Shoegaze"],
         "year" : 1988
     },
     {
         "title" : "Be Quiet and Drive (Far Away)",
         "artists" : ["Deftones"],
-        "genres" : ["Alternative Metal", "Post-Punk"],
+        "genres" : ["Alternative Metal"],
         "year" : 1997
     }
 ]
