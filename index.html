@@ -7,7 +7,7 @@
 <body>
     <script language = "javascript">
         document.write("hello");
-        $.get("songs.json", function(data) {
+        $.get("https://iiewa.github.io/hw7/songs.json", function(data) {
             console.log("in function");
 			songstring = JSON.stringify(data);
 			document.write(songstring +"<br/>");
