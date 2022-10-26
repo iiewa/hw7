@@ -7,18 +7,18 @@
 <body>
     <script language = "javascript">
         document.write("hello");
-        $.get("https://iiewa.github.io/hw7/songs.json", function(data) {
+        $.get("https://iiewa.github.io/hw7/songs.json", function(songlist) {
             console.log("in function");
-			songstring = JSON.stringify(data);
+			songstring = JSON.stringify(songlist);
 			document.write(songstring +"<br/>");
 		songstringHTML = "<ul>";
-		// data.forEach(function(song) { 
-		// strHTML += "<li>" 
-		// 	    + song.name + " : " 
-		// 		+ song.artists + "</li>";
-		// 	}) 
-	    // strHTML += "</ul>";
-	    // document.write (strHTML);
+		songlist.forEach(function(song) { 
+		    songstringHTML += song.title 
+                    + "<br/>Artist: " + song.artists + "<br/>Genre: " + song.genres 
+                    + "<br/>Released: " + song.year;
+			}) 
+	    songstringHTML += "</br>";
+	    document.write (songstringHTML);
 	})
 
     // // display data in user friendly table
