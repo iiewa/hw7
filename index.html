@@ -6,6 +6,7 @@
 </head>
 <body>
     <script language = "javascript">
+        document.write("hello");
         $.get("songs.json", function(data) {
             console.log("in function");
 			songstring = JSON.stringify(data);
