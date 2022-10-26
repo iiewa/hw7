@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Song List</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+</head>
+<body>
+    <script language = "javascript">
+        $.get("songs.json", function(data) {
+            console.log("in function");
+			songstring = JSON.stringify(data);
+			document.write(songstring +"<br/>");
+		songstringHTML = "<ul>";
+		// data.forEach(function(song) { 
+		// strHTML += "<li>" 
+		// 	    + song.name + " : " 
+		// 		+ song.artists + "</li>";
+		// 	}) 
+	    // strHTML += "</ul>";
+	    // document.write (strHTML);
+	})
+
+    // // display data in user friendly table
+	// function displayTable() {
+    // 	for (i = 0; i < object.songs.length; i++) {
+    //     	$("#songs-table").append(
+    //         	'<tr>' +
+    //             	'<td>' + 
+    //                 	object.songs[i].title + 
+    //             	'</td><td>' + 
+    //                 	object.songs[i].artists.join(', ') + 
+    //             	'</td><td>' + 
+    //                 	object.songs[i].genres.join(', ') + 
+    //             	'</td><td>' + 
+    //                 	object.songs[i].year_released + 
+    //             	'</td>' +
+    //         	'</tr>'
+    //     	);
+    // 	}
+	// }
+    
+    </script>
+</body>
+</html>
