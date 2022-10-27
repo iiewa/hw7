@@ -3,43 +3,98 @@
 <meta charset="utf-8">
 <title>Song List</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<style>
+    body {
+        background-color: #F0EFEB;
+        margin: 15%;
+        margin-top: 5%;
+    }
+    h1 {
+        font-family: Helvetica;
+        color: #008042;
+    }
+    p {
+        font-family: Helvetica;
+    }
+    div {
+        padding: 2%;
+        background-color: #ffffff;
+        margin-bottom: 2%;
+    }
+    #friendlystring {
+        color: #008042;
+    }
+    button {
+        border: none;
+        background-color: #008042;
+        color: #ffffff;
+    }
+</style>
+
 </head>
 <body>
+    <h1>Song list!</h1>
+    <div id = "rawstring"></div>
+    <div id = "friendlystring"></div>
+    <form action="">
+        <select name="genre_selection" id="genres">
+            <option value='All'>All Genres</option>
+            <option value='Alternative'>Alternative</option>
+            <option value='Alternative Metal'>Alternative Metal</option>
+            <option value='Britpop'>Britpop</option>
+            <option value='Folk Rock'>Folk Rock</option>
+            <option value="Indie Rock">Indie Rock</option>
+            <option value="Indie Pop">Indie Pop</option>
+            <option value="Pop">Pop</option>
+            <option value="R&B">R&B</option>
+            <option value="Synth">Synth</option>
+            <option value="Shoegaze">Shoegaze</option>
+        </select>
+    </form>
+    <button type="button"id="filter">Filter by genre</button>
+
     <script language = "javascript">
-        document.write("hello");
+        // get raw string of song info and display
         $.get("https://iiewa.github.io/hw7/songs.json", function(songlist) {
-            console.log("in function");
-			songstring = JSON.stringify(songlist);
-			document.write(songstring +"<br/>");
-		songstringHTML = "<ul>";
+			$('#rawstring').html("<p>" + JSON.stringify(songlist) + "</p>");
+        
+        // display user-friendly song info
+		songstringHTML = "<p>";
 		songlist.forEach(function(song) { 
 		    songstringHTML += song.title 
                     + "<br/>Artist: " + song.artists + "<br/>Genre: " + song.genres 
-                    + "<br/>Released: " + song.year;
-			}) 
-	    songstringHTML += "</br>";
-	    document.write (songstringHTML);
-	})
+                    + "<br/>Released: " + song.year + "<br/><br/>";
+			})
+            $('#friendlystring').html(songstringHTML+"</p>");
+        
+        // filter by genre
+        $('#filter').click(function() {
+            filtered_songstring = "";
+            genre = $('#genres').val();
+            if (genre == "All") {
+                songlist.forEach(function(song) { 
+		        filtered_songstring += song.title 
+                    + "<br/>Artist: " + song.artists + "<br/>Genre: " + song.genres 
+                    + "<br/>Released: " + song.year + "<br/><br/>";
+			    })
+            }
+            else {
+                songlist.forEach(function(song) { 
+                    if (song.genres.includes(genre)) {
+                        filtered_songstring += song.title 
+                        + "<br/>Artist: " + song.artists + "<br/>Genre: " + song.genres 
+                        + "<br/>Released: " + song.year + "<br/><br/>";
+                    }
+                })
+            }
+            $('#friendlystring').html("<p>" + filtered_songstring + "</p>");
 
-    // // display data in user friendly table
-	// function displayTable() {
-    // 	for (i = 0; i < object.songs.length; i++) {
-    //     	$("#songs-table").append(
-    //         	'<tr>' +
-    //             	'<td>' + 
-    //                 	object.songs[i].title + 
-    //             	'</td><td>' + 
-    //                 	object.songs[i].artists.join(', ') + 
-    //             	'</td><td>' + 
-    //                 	object.songs[i].genres.join(', ') + 
-    //             	'</td><td>' + 
-    //                 	object.songs[i].year_released + 
-    //             	'</td>' +
-    //         	'</tr>'
-    //     	);
-    // 	}
-	// }
-    
+        })
+            
+            
+	    })
+        
     </script>
 </body>
 </html>
