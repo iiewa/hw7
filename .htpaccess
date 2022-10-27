@@ -1,0 +1,3 @@
+<Files "songs.json">
+	Header set Access-Control-Allow-Origin "*"
+</Files>
